@@ -20,6 +20,13 @@ More information can be found [here](https://en.wikipedia.org/wiki/STL_(file_for
   - volume
   - surface area
 
+## Libraries
+
+- `Django` for making the web application.
+- `numpy-stl` for reading the STL file.
+- `pathlib` to handle file path.
+- `pytest` for testing.
+
 ## Getting Started
 
 - Clone the repository.
@@ -35,18 +42,24 @@ More information can be found [here](https://en.wikipedia.org/wiki/STL_(file_for
 
 - Select a sphere type and upload an STL file.
 
+## Testing
+
+- Run tests with `pytest src`
+
 ## Author
 
 - Himel Das
 
 ## Acknowledgement
 
+### Citation
+
 - https://pypi.org/project/numpy-stl/
 - https://docs.djangoproject.com/en/3.2/topics/http/file-uploads/
 - https://www.ordinarycoders.com/blog/article/django-file-image-uploads
 - https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html
 
-## Sources
+### Sources
 
 - [300_polygon_sphere_100mm.STL](https://www.thingiverse.com/thing:156207)
 - [rectangel.stl](https://www.thingiverse.com/thing:9742)
