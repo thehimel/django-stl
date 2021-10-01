@@ -1,18 +1,30 @@
-<html lang="en">
+{% extends 'base.html' %}
 
-{% if data %}
-    {% for key, value in data.items %}
-        <li>{{ key }}: {{ value }}</li>
-    {% endfor %}
-{% endif %}
+{% block content %}
+<div class="container">
+    <h1>Extract STL Files with Python and Django</h1>
 
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {% if error %}
-        {{ error }}
-    {% endif %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit">
-</form>
+    <section class="mt-4 mb-4">
+        {% if data %}
+            {% for key, value in data.items %}
+                <li>{{ key }}: {{ value }}</li>
+            {% endfor %}
+        {% endif %}
+    </section>
+    <section class="mt-4 mb-4">
+        <legend class="border-bottom mb-4">Submit Data</legend>
+        {% if error %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ error }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endif %}
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </section>
 
-</html>
+</div>
+{% endblock %}
