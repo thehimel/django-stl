@@ -23,7 +23,7 @@ More information can be found [here](https://en.wikipedia.org/wiki/STL_(file_for
 ## Getting Started
 
 - Clone the repository.
-- Install dependencies with `pip install -r requirements-dev.txt`
+- Install dependencies with `pip install -r requirements.txt`
 - Run migration with `python src/manage.py migrate`
 
 ## Running the Server
@@ -45,3 +45,7 @@ More information can be found [here](https://en.wikipedia.org/wiki/STL_(file_for
 - https://docs.djangoproject.com/en/3.2/topics/http/file-uploads/
 - https://www.ordinarycoders.com/blog/article/django-file-image-uploads
 - https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html
+
+## Sources
+
+- [300_polygon_sphere_100mm.STL](https://www.thingiverse.com/thing:156207)
