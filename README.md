@@ -49,3 +49,4 @@ More information can be found [here](https://en.wikipedia.org/wiki/STL_(file_for
 ## Sources
 
 - [300_polygon_sphere_100mm.STL](https://www.thingiverse.com/thing:156207)
+- [rectangel.stl](https://www.thingiverse.com/thing:9742)
