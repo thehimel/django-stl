@@ -31,12 +31,12 @@ def extract(file, sphere_type):
         w_int, l_int, h_int = int(width), int(length), int(height)
         diameter = None
         if w_int == l_int or w_int == h_int:
-            diameter = width / 2
+            diameter = width
             if w_int == l_int:
                 length = height
         elif l_int == h_int:
             length = width
-            diameter = height / 2
+            diameter = height
 
         if diameter:
             data = {
