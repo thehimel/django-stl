@@ -3,12 +3,15 @@
 {% block content %}
 <div class="container">
     <h1>Extract the STL File with Python and Django</h1>
-
     <section class="mt-4 mb-4">
         {% if data %}
-            {% for key, value in data.items %}
-                <li>{{ key }}: {{ value }}</li>
-            {% endfor %}
+            <ul class="list-group">
+                {% for key, value in data.items %}
+                <li class="list-group-item">
+                    {{ key }} <span class="badge alert-info">{{ value }}</span>
+                </li>
+                {% endfor %}
+            </ul>
         {% endif %}
     </section>
     <section class="mt-4 mb-4">
