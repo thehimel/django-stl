@@ -20,6 +20,10 @@ More information can be found [here](https://en.wikipedia.org/wiki/STL_(file_for
   - volume
   - surface area
 
+## Python
+
+- Minimum Python interpreter version is `3.9`.
+
 ## Libraries
 
 - `Django` for making the web application.
@@ -30,6 +34,12 @@ More information can be found [here](https://en.wikipedia.org/wiki/STL_(file_for
 ## Getting Started
 
 - Clone the repository.
+- Create a virtual environment.
+  - Windows: `python -m venv venv`
+  - Linux: `python3.9 -m venv venv`
+- Activate the virtual environment.
+  - Windows: `venv\Scripts\activate`
+  - Linux: `source venv/bin/activate`
 - Install dependencies with `pip install -r requirements.txt`
 - Run migration with `python src/manage.py migrate`
 
