@@ -1,0 +1,18 @@
+<html lang="en">
+
+{% if data %}
+    {% for key, value in data.items %}
+        <li>{{ key }}: {{ value }}</li>
+    {% endfor %}
+{% endif %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if error %}
+        {{ error }}
+    {% endif %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+
+</html>
